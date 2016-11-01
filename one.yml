@@ -1,9 +1,6 @@
 ---
--name
+- name: Setup
   hosts: all
   become: true
-
-
   roles:
-
-  -word-domain
+  - word-domain
