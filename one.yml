@@ -5,7 +5,7 @@
   become: true
 
 
-  tasks:
+  roles:
 
   - name: Add ansible user
 
