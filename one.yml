@@ -1,34 +1,9 @@
 ---
- - name: Setup
-
+-name
   hosts: all
-  become true
+  become: true
 
 
-  tasks:
+  roles:
 
-  - name: Add ansible user
-
-    user:
-
-      name: ansible
-
-      state: present
-
-      generate_ssh_keys: true
-
-  - name: Ensure that NTP is available
-
-    apt:
-
-      name: ntp
-
-      state: present
-
-  - name: Ensure that NTP service is started
-
-    service:
-
-      name: ntp
-
-      state: started
+  -word-domain
